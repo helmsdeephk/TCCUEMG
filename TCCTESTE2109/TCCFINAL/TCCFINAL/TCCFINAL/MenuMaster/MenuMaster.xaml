@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TCCFINAL.MenuMaster.MenuMaster"
+                  xmlns:page="clr-namespace:TCCFINAL">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="DeepSkyBlue">
+            <StackLayout Padding="30">
+                <Image Source="xamarin.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Text="Inicio" Clicked="GoToMainPage" TextColor="White" FontSize="25"/>
+                <Button Text="Equipamentos" Clicked="GoToPagina1" TextColor="White" FontSize="25"/>
+                <Button Text="Cadastro de Equipamentos" Clicked="GoToPagina2" FontSize="25" TextColor="White"/>
+                <Button Text="Mapa do Hospital" Clicked ="GoToPagina3" FontSize="25" TextColor="White"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <page:MainPage/>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
